@@ -1,8 +1,6 @@
 'use strict';
 
-module.exports = {
-  tokenAfter: tokenAfter
-};
+exports.tokenAfter = tokenAfter;
 
 function tokenAfter(token) {
   var prev;
