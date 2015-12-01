@@ -1,6 +1,6 @@
 {
   "name": "esformatter-ng-annotate",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "esformatter plugin for removing line breaks between ngAnnotate decorator comments and the functions to which they belong.",
   "main": "index.js",
   "scripts": {
