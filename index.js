@@ -6,13 +6,13 @@ function tokenAfter(token) {
   var prev;
   if (token && token.type === 'LineBreak') {
     prev = token.prev;
-    if (prev && prev.type === 'BlockComment' && prev.value.match(/\s*@(?:nginject|ngnoinject)\s*/i)) {
+    if (prev && prev.type === 'BlockComment' && prev.value.match(/\s*@(?:ngInject|ngNoInject)\s*/)) {
       remove(token);
     }
   }
-  if (token && token.type === 'Keyword' && token.value.match(/function/i)) {
+  if (token && token.type === 'Keyword' && token.value.match(/function/)) {
     prev = token.prev;
-    if (prev && prev.type === 'BlockComment' && prev.value.match(/\s*@(?:nginject|ngnoinject)\s*/i)) {
+    if (prev && prev.type === 'BlockComment' && prev.value.match(/\s*@(?:ngInject|ngNoInject)\s*/)) {
       insertBefore(token, {
         type: 'WhiteSpace',
         value: ' '
