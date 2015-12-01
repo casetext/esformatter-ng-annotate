@@ -1,4 +1,4 @@
-# esformatter-nginject
+# esformatter-ng-annotate
 
 [esformatter](https://github.com/millermedeiros/esformatter) plugin for removing line breaks between ngAnnotate decorator comments and the functions to which they belong.
 
